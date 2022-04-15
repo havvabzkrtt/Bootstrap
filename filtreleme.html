@@ -1,0 +1,1499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Table Filtreleme</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+
+<style>
+  body {background-color: rgb(145, 183, 237);}
+</style>
+
+<script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#tableData tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+</script>
+
+
+</head>
+<body>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-8">
+      <h2> ÜLKELER-BAŞKENTLER-BÖLGELER-BAYRAKLAR</h2>
+      <p>Fitrelemek istediğiniz ülkenin başkentini giriniz:</p>
+      <input class="form-control" id="myInput" type="text" placeholder="Ara..">
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">NAME</th>
+            <th scope="col">CAPITAL</th>
+            <th scope="col">REGION</th>
+            <th scope="col">FLAG</th>
+          </tr>
+        </thead>
+        <tbody id="tableData">
+
+          <tr>
+            <td>Afganistan</td>
+            <td>Kâbil</td>
+            <td>Asya</td>
+            <td> <img src="flags/afganistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Almanya</td>
+            <td>Berlin</td>
+            <td>Avrupa</td>
+            <td> <img src="flags/almanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Amerika Birleşik Devletleri</td>
+            <td>Washington, DC</td>
+            <td>Kuzey Amerika</td>
+            <td> <img src="flags/amerika-birlesik-devletleri.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Andorra</td>
+            <td>Andorra la Vella</td>
+            <td>Batı Avrupa</td>
+            <td><img src="flags/andorra.png" height="50%" width="50%"> </td>
+          </tr>
+          <tr>
+            <td>Angola</td>
+            <td>Luanda</td>
+            <td>Güneybatı Afrika</td>
+            <td><img src="flags/angola.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Antigua ve Barbuda</td>
+            <td>St John</td>
+            <td>Karayipler</td>
+            <td> <img src="flags/antigua-ve-barbuda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Arjantin</td>
+            <td>Buenos Aires</td>
+            <td>Güney Amerika</td>
+            <td> <img src="flags/arjantin.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Arnavutluk</td>
+            <td>Tiran</td>
+            <td>Balkanlar</td>
+            <td> <img src="flags/arnavutluk.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Avustralya</td>
+            <td>Canberra</td>
+            <td>Okyanusya</td>
+            <td><img src="flags/avustralya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Avusturya</td>
+            <td>Viyana</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/avusturya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Azerbaycan</td>
+            <td>Bakü</td>
+            <td>Kafkasya</td>
+            <td><img src="flags/azerbaycan.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          <tr>
+            <td>Bahamalar</td>
+            <td>Nassau</td>
+            <td>Karayipler</td>
+            <td><img src="flags/bahamalar.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bahreyn</td>
+            <td>Manama</td>
+            <td>Basra Körfezi</td>
+            <td><img src="flags/bahreyn.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bangladeş</td>
+            <td>Dhaka</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/banglades.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Barbados</td>
+            <td>Bridgetown</td>
+            <td>Karayipler</td>
+            <td><img src="flags/barbados.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Batı Sahra</td>
+            <td>Laayoune</td>
+            <td>Batı Sahra</td>
+            <td><img src="flags/bati-sahra.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Belçika</td>
+            <td>Brüksel</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/belcika.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Belize</td>
+            <td>Belmopan</td>
+            <td>Kuzey Amerika</td>
+            <td><img src="flags/belize.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Benin</td>
+            <td>Porto- Novo</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/benin.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Beyaz Rusya</td>
+            <td>Minsk</td>
+            <td>Avrupa</td>
+            <td><img src="flags/beyaz-rusya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bhutan</td>
+            <td>Thimphu</td>
+            <td>Hint Anakarası</td>
+            <td><img src="flags/bhutan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Birleşik Arap Emirlikleri</td>
+            <td>Abu Dabi</td>
+            <td>Arap Yarımadası</td>
+            <td><img src="flags/birlesik-arap-emirlikleri.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Birleşik Krallık</td>
+            <td>Londra</td>
+            <td>Kuzey Batı Avrupa</td>
+            <td><img src="flags/birlesik-krallik.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bolivya</td>
+            <td>Sucre</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/bolivya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bosna-Hersek</td>
+            <td>Saraybosna</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/bosna-hersek.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Botsvana</td>
+            <td>Gaborone</td>
+            <td>Güney Afrika</td>
+            <td><img src="flags/botsvana.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Brezilya</td>
+            <td>Brezilya</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/brezilya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Brunei</td>
+            <td>Bandar Seri Begawan</td>
+            <td>Borneo Adası</td>
+            <td><img src="flags/brunei.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Bulgaristan</td>
+            <td>Sofya</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/bulgaristan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Burkina Faso</td>
+            <td>Ouagadougou</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/burkina-faso.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Burundi</td>
+            <td>Bujumbura</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/burundi.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Cezayir</td>
+            <td>Cezayir</td>
+            <td>Kuzey Afrika</td>
+            <td><img src="flags/cezayir.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Cibuti</td>
+            <td>Cibuti</td>
+            <td>Doğu Afrika</td>
+            <td><img src="flags/cibuti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Cook Adaları</td>
+            <td>Avarua</td>
+            <td>Okyanusya</td>
+            <td><img src="flags/cook-adalari.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          <tr>
+            <td>Çad</td>
+            <td>N’Djamena</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/cad.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Çek Cumhuriyeti</td>
+            <td>Prag</td>
+            <td>Doğu Avrupa	</td>
+            <td><img src="flags/cek-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Çin Cumhuriyeti</td>
+            <td>Taipei</td>
+            <td>Doğu Asya</td>
+            <td><img src="flags/cin-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Çin Halk Cumhuriyeti</td>
+            <td>Pekin</td>
+            <td>Doğu Asya</td>
+            <td><img src="flags/cin-halk-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Danimarka</td>
+            <td>Kopenhag</td>
+            <td>İskandinavya</td>
+            <td><img src="flags/danimarka.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Doğu Timor</td>
+            <td>Dili</td>
+            <td>Güneydoğu Asya</td>
+            <td><img src="flags/dogu-timor.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Dominik Cumhuriyeti</td>
+            <td>Santo Domingo</td>
+            <td>Karayip</td>
+            <td><img src="flags/dominik-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Dominika</td>
+            <td>Roseau</td>
+            <td>Karayip</td>
+            <td><img src="flags/dominika.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Ekvador</td>
+            <td>Quito</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/ekvador.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Ekvator Ginesi</td>
+            <td>Malabo</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/ekvator-ginesi.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>El Salvador</td>
+            <td>San Salvador</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/el-salvador.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Endonezya</td>
+            <td>Jakarta</td>
+            <td>Güneydoğu Asya</td>
+            <td><img src="flags/endonezya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Eritre</td>
+            <td>Asmara</td>
+            <td>Doğu Afrika</td>
+            <td><img src="flags/eritre.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Ermenistan</td>
+            <td>Yerevan</td>
+            <td>Kafkasya</td>
+            <td><img src="flags/ermenistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Estonya</td>
+            <td>Tallinn</td>
+            <td>Baltık Ülkesi</td>
+            <td><img src="flags/estonya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Etiyopya</td>
+            <td>Addis Ababa</td>
+            <td>Doğu Afrika</td>
+            <td><img src="flags/etiyopya.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Fas</td>
+            <td>Rabat</td>
+            <td>Kuzay Afrika</td>
+            <td><img src="flags/fas.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Fiji</td>
+            <td>Suva</td>
+            <td>Pasifik</td>
+            <td><img src="flags/fiji.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Fildişi Sahili</td>
+            <td>Yamoussoukro</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/fildisi-sahili.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Filipinler</td>
+            <td>Manila</td>
+            <td>Güney Asya</td>
+            <td><img src="flags/filipinler.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Finlandiya</td>
+            <td>Helsinki</td>
+            <td>İskandinavya</td>
+            <td><img src="flags/finlandiya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Fransa</td>
+            <td>Paris</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/fransa.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Gabon</td>
+            <td>Libreville</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/gabon.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Gambiya</td>
+            <td>Banjul</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/gambiya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Gana</td>
+            <td>Accra</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/gana.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Gine</td>
+            <td>Conakry</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/gine.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Gine-Bissau</td>
+            <td>Bissau</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/gine-bissau.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Grenada</td>
+            <td>St George’s</td>
+            <td>Karayipler</td>
+            <td><img src="flags/grenada.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Guatemala</td>
+            <td>Guatemala City</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/guatemala.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Guyana</td>
+            <td>Georgetown</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/guyana.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Güney Afrika Cumhuriyeti</td>
+            <td>Pretoria</td>
+            <td>Güney Afrika</td>
+            <td><img src="flags/guney-afrika-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Güney Kore</td>
+            <td>Seul</td>
+            <td>Uzakdoğu</td>
+            <td><img src="flags/guney-kore.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Güney Sudan</td>
+            <td>Cuba</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/guney-sudan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Gürcistan</td>
+            <td>Tiflis</td>
+            <td>Kafkasya</td>
+            <td><img src="flags/gürcistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          <tr>
+            <td>Haiti</td>
+            <td>Port-au -Prince</td>
+            <td>Karayipler</td>
+            <td><img src="flags/haiti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Hırvatistan</td>
+            <td>Zagreb</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/hirvatistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Hindistan</td>
+            <td>Yeni Delhi</td>
+            <td>Hint Anakarası</td>
+            <td><img src="flags/hindistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Hollanda</td>
+            <td>Amsterdam</td>
+            <td>Batı Avrupa</td>
+            <td><img src="flags/hollanda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Honduras</td>
+            <td>Tegucigalpa</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/honduras.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          <tr>
+            <td>Irak</td>
+            <td>Bağdat</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/irak.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İran</td>
+            <td>Tahran</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/iran.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İrlanda</td>
+            <td>Dublin</td>
+            <td>Batı Avrupa</td>
+            <td><img src="flags/irlanda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İspanya</td>
+            <td>Madrid</td>
+            <td>İber Yarımadası</td>
+            <td><img src="flags/ispanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İsrail</td>
+            <td>Tel Aviv</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/israil.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İsveç</td>
+            <td>Stockholm</td>
+            <td>İskandinavya</td>
+            <td><img src="flags/isvec.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İsviçre</td>
+            <td>Bern</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/isvicre.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İtalya</td>
+            <td>Roma</td>
+            <td>Güney Avrupa</td>
+            <td><img src="flags/italya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>İzlanda</td>
+            <td>Reykjavik</td>
+            <td>Kuzey Avrupa</td>
+            <td><img src="flags/izlanda.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Jamaika</td>
+            <td>Kingston</td>
+            <td>Karayipler</td>
+            <td><img src="flags/jamaika.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Japonya</td>
+            <td>Tokyo</td>
+            <td>Uzakdoğu</td>
+            <td><img src="flags/japonya.png" height="50%" width="50%"> </td>
+          </tr>
+          
+
+
+          <tr>
+            <td>Kamboçya</td>
+            <td>Phnom Penh</td>
+            <td>Doğu Asya</td>
+            <td><img src="flags/kambocya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kamerun</td>
+            <td>Yaoundé</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/kamerun.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kanada</td>
+            <td>Ottawa</td>
+            <td>Kuzey Amerika</td>
+            <td><img src="flags/kanada.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Karadağ</td>
+            <td>Podgorica</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/karadag.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Katar</td>
+            <td>Doha</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/katar.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kazakistan</td>
+            <td>Astana</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/kazakistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kenya</td>
+            <td>Nairobi</td>
+            <td>Doğu Afrika</td>
+            <td><img src="flags/kenya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kıbrıs Cumhuriyeti</td>
+            <td>Nicosia</td>
+            <td>Akdeniz</td>
+            <td><img src="flags/kibris-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kırgızistan</td>
+            <td>Bişkek</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/kirgizistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kiribati</td>
+            <td>Bairiki</td>
+            <td>Pasifik</td>
+            <td><img src="flags/kiribati.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kolombiya</td>
+            <td>Bogota</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/kolombiya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Komorlar</td>
+            <td>Moroni</td>
+            <td>Hint Okyanusu</td>
+            <td><img src="flags/komorlar.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kongo Cumhuriyeti</td>
+            <td>Brazzaville</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/kongo-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kosova</td>
+            <td>Priştine</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/kosova.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kosta Rika</td>
+            <td>San José</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/kosta-rika.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kuveyt</td>
+            <td>Kuveyt</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/kuveyt.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Kuzey Kore</td>
+            <td>Pyongyang ( P’yŏngyang )</td>
+            <td>Uzakdoğu</td>
+            <td><img src="flags/kuzey-kore.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Küba</td>
+            <td>Havana</td>
+            <td>Karayipler</td>
+            <td><img src="flags/kuba.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Laos</td>
+            <td>Vientiane</td>
+            <td>Güneydoğu Asya</td>
+            <td><img src="flags/laos.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Lesotho</td>
+            <td>Maseru</td>
+            <td>Güney Afrika</td>
+            <td><img src="flags/lesotho.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Letonya</td>
+            <td>Riga</td>
+            <td>Doğu Avrupa</td>
+            <td><img src="flags/letonya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Liberya</td>
+            <td>Monrovia</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/liberya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Libya</td>
+            <td>Tripoli</td>
+            <td>Kuzey Afrika</td>
+            <td><img src="flags/libya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Lihtenştayn</td>
+            <td>Vaduz</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/lihtenstayn.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Litvanya</td>
+            <td>Vilnius</td>
+            <td>Doğu Avrupa</td>
+            <td><img src="flags/litvanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Lübnan</td>
+            <td>Beyrut</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/lubnan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Lüksemburg</td>
+            <td>Lüksemburg</td>
+            <td>Batı Avrupa</td>
+            <td><img src="flags/luksemburg.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Macaristan</td>
+            <td>Budapeşte</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/macaristan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Madagaskar</td>
+            <td>Antananarivo</td>
+            <td>Güneydoğu Afrika</td>
+            <td><img src="flags/madagaskar.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Makedonya</td>
+            <td>Üsküp</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/makedonya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Malavi</td>
+            <td>Lilongwe</td>
+            <td>Afrika</td>
+            <td><img src="flags/malavi.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Maldivler</td>
+            <td>Male</td>
+            <td>Hint Yarımadası</td>
+            <td><img src="flags/maldivler.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Malezya</td>
+            <td>Kuala Lumpur</td>
+            <td>Güneydoğu Asya</td>
+            <td><img src="flags/malezya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Mali</td>
+            <td>Bamako</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/mali.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Malta</td>
+            <td>Valletta</td>
+            <td>Akdeniz</td>
+            <td><img src="flags/malta.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Marshall Adaları</td>
+            <td>Majuro</td>
+            <td>Pasifik</td>
+            <td><img src="flags/marshall-adalari.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Mauritius</td>
+            <td>Port Louis</td>
+            <td>Hint Okyanusu</td>
+            <td><img src="flags/mauritius.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Meksika</td>
+            <td>Meksiko</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/meksika.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Mısır</td>
+            <td>Kahire</td>
+            <td>Kuzey Afrika</td>
+            <td><img src="flags/misir.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Mikronezya</td>
+            <td>Palikir</td>
+            <td>Pasifik</td>
+            <td><img src="flags/mikronezya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Moğolistan</td>
+            <td>Ulan Batur</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/mogolistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Moldova</td>
+            <td>Chisinau</td>
+            <td>Doğu Avrupa</td>
+            <td><img src="flags/moldova.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Monako</td>
+            <td>Monako</td>
+            <td>Batı Avrupa</td>
+            <td><img src="flags/monako.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Moritanya</td>
+            <td>Nouakchott</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/moritanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Mozambik</td>
+            <td>Maputo</td>
+            <td>Güneydoğu Afrika</td>
+            <td><img src="flags/mozambik.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Myanmar</td>
+            <td>Naypyidaw</td>
+            <td>Güneydoğu Asya</td>
+            <td><img src="flags/myanmar.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          
+          <tr>
+            <td>Namibya</td>
+            <td>Windhoek</td>
+            <td>Güneybatı Afrika</td>
+            <td><img src="flags/namibya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Nauru</td>
+            <td>Yaren</td>
+            <td>Pasifik</td>
+            <td><img src="flags/nauru.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Nepal</td>
+            <td>Katmandu</td>
+            <td>Kuzey Hindistan</td>
+            <td><img src="flags/nepal.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Nijer</td>
+            <td>Niamey</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/nijer.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Nijerya</td>
+            <td>Abuja</td>
+            <td>Afrika</td>
+            <td><img src="flags/nijerya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Nikaragua</td>
+            <td>Managua</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/nikaragua.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Norveç</td>
+            <td>Oslo</td>
+            <td>Kuzey Avrupa</td>
+            <td><img src="flags/norvec.png" height="50%" width="50%"> </td>
+          </tr>
+
+          
+
+          <tr>
+            <td>Orta Afrika Cumhuriyeti</td>
+            <td>Bangui</td>
+            <td>Afrika</td>
+            <td><img src="flags/orta-afrika-cumhuriyeti.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Özbekistan</td>
+            <td>Taşkent</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/ozbekistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+          <tr>
+            <td>Pakistan</td>
+            <td>İslamabad</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/pakistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Palau</td>
+            <td>Ngerulmud</td>
+            <td>Kuzey Pasifik</td>
+            <td><img src="flags/palau.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Panama</td>
+            <td>Panama City</td>
+            <td>Orta Amerika</td>
+            <td><img src="flags/panama.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Papua Yeni Gine</td>
+            <td>Port Moresby</td>
+            <td>Doğu Yeni Gine Adası</td>
+            <td><img src="flags/papua-yeni-gine.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Paraguay</td>
+            <td>Asunción</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/paraguay.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Peru</td>
+            <td>Lima</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/peru.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Polonya</td>
+            <td>Varşova</td>
+            <td>Doğu Avrupa</td>
+            <td><img src="flags/polonya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Portekiz</td>
+            <td>Lizbon</td>
+            <td>Güney Avrupa</td>
+            <td><img src="flags/portekiz.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Romanya</td>
+            <td>Bükreş</td>
+            <td>Balkanla</td>
+            <td><img src="flags/romanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Ruanda</td>
+            <td>Kigali</td>
+            <td>Orta Afrika</td>
+            <td><img src="flags/ruanda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Rusya</td>
+            <td>Moskova</td>
+            <td>Avrupa</td>
+            <td><img src="flags/rusya.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Saint Kitts ve Nevis</td>
+            <td>Basseterre</td>
+            <td>Karayipler</td>
+            <td><img src="flags/saint-kitts-ve-nevis.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Saint Lucia</td>
+            <td>Castries</td>
+            <td>Karayipler</td>
+            <td><img src="flags/saint-lucia.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Saint Vincent ve Grenadinler</td>
+            <td>Kingstown</td>
+            <td>Karayipler</td>
+            <td><img src="flags/saint-vincent-ve-grenadinler.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Samoa</td>
+            <td>Apia</td>
+            <td>Pasifik</td>
+            <td><img src="flags/samoa.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>San Marino</td>
+            <td>San Marino</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/san-marino.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>São Tomé ve Príncipe</td>
+            <td>Sao Tome</td>
+            <td>Atlas Okyanusu</td>
+            <td><img src="flags/sao-tome-ve-principe.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Senegal</td>
+            <td>Dakar</td>
+            <td>Afrika</td>
+            <td><img src="flags/senegal.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Seyşeller</td>
+            <td>Victoria</td>
+            <td>Batı Hint Okyanusu</td>
+            <td><img src="flags/seyseller.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Sırbistan</td>
+            <td>Belgrat</td>
+            <td>Balkanlar</td>
+            <td><img src="flags/sirbistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Sierra Leone</td>
+            <td>Freetown</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/sierra-leone.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Singapur</td>
+            <td>Singapur</td>
+            <td>Asya</td>
+            <td><img src="flags/singapur.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Slovakya</td>
+            <td>Bratislava</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/slovakya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Slovenya</td>
+            <td>Ljubljana</td>
+            <td>Orta Avrupa</td>
+            <td><img src="flags/slovenya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Solomon Adaları</td>
+            <td>Honiara</td>
+            <td>Pasifik</td>
+            <td><img src="flags/solomon-adalari.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Somali</td>
+            <td>Mogadişu</td>
+            <td>Afrika</td>
+            <td><img src="flags/somali.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Sri Lanka</td>
+            <td>Colombo</td>
+            <td>Seylan adası</td>
+            <td><img src="flags/sri-lanka.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Sudan</td>
+            <td>Hartum</td>
+            <td>Afrika</td>
+            <td><img src="flags/sudan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Surinam</td>
+            <td>Paramaribo</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/surinam.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Suriye</td>
+            <td>Şam</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/suriye.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Suudi Arabistan</td>
+            <td>Riyad</td>
+            <td>Arap Yarımadası</td>
+            <td><img src="flags/suudi-arabistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Svaziland</td>
+            <td>Mbabane</td>
+            <td>Afrika</td>
+            <td><img src="flags/svaziland.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Şili</td>
+            <td>Santiago</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/sili.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Tacikistan</td>
+            <td>Duşanbe</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/tacikistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Tanzanya</td>
+            <td>Dodoma</td>
+            <td>Doğu Afrika</td>
+            <td><img src="flags/tanzanya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Tayland</td>
+            <td>Bangkok</td>
+            <td>Uzakdoğu</td>
+            <td><img src="flags/tayland.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Togo</td>
+            <td>Lomé</td>
+            <td>Batı Afrika</td>
+            <td><img src="flags/togo.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Tonga</td>
+            <td>Nuku’alofa</td>
+            <td>Pasifik</td>
+            <td><img src="flags/tonga.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Trinidad ve Tobago</td>
+            <td>Port of Spain</td>
+            <td>Karayipler</td>
+            <td><img src="flags/trinidad-ve-tobago.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Tunus</td>
+            <td>Tunus</td>
+            <td>Kuzeybatı Afrika</td>
+            <td><img src="flags/tunus.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Tuvalu</td>
+            <td>Funafuti</td>
+            <td>Pasifik</td>
+            <td><img src="flags/tuvalu.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Türkiye</td>
+            <td>Ankara</td>
+            <td>Avrupa-Asya</td>
+            <td><img src="flags/turkiye.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Türkmenistan</td>
+            <td>Aşkabat</td>
+            <td>Orta Asya</td>
+            <td><img src="flags/turkmenistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Uganda</td>
+            <td>Kampala</td>
+            <td>Afrika</td>
+            <td><img src="flags/uganda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Ukrayna</td>
+            <td>Kiev</td>
+            <td>Doğu Avrupa</td>
+            <td><img src="flags/ukrayna.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Umman</td>
+            <td>Maskat</td>
+            <td>Arap Yarımadası</td>
+            <td><img src="flags/umman.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Uruguay</td>
+            <td>Montevideo</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/uruguay.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Ürdün</td>
+            <td>Amman</td>
+            <td>Orta Doğu</td>
+            <td><img src="flags/urdun.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Vanuatu</td>
+            <td>Port Vila</td>
+            <td>Pasifik</td>
+            <td><img src="flags/vanuatu.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Vatikan</td>
+            <td>Vatikan</td>
+            <td>Güney Avrupa</td>
+            <td><img src="flags/vatikan.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Venezuela</td>
+            <td>Karakas</td>
+            <td>Güney Amerika</td>
+            <td><img src="flags/venezuela.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Vietnam</td>
+            <td>Hanoi</td>
+            <td>Asya</td>
+            <td><img src="flags/vietnam.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Yemen</td>
+            <td>Sanaa</td>
+            <td>Arap Yarımadası</td>
+            <td><img src="flags/yemen.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Yeni Zelanda</td>
+            <td>Wellington</td>
+            <td>Okyanusya</td>
+            <td><img src="flags/yeni-zelanda.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Yeşil Burun Adaları</td>
+            <td>Praia</td>
+            <td>Afrika</td>
+            <td><img src="flags/yesil-burun-adalari.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Yunanistan</td>
+            <td>Atina</td>
+            <td>Güneydoğu Avrupa</td>
+            <td><img src="flags/yunanistan.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Zambiya</td>
+            <td>Lusaka</td>
+            <td>Afrika</td>
+            <td><img src="flags/zambiya.png" height="50%" width="50%"> </td>
+          </tr>
+
+          <tr>
+            <td>Zimbabve</td>
+            <td>Harare</td>
+            <td>Afrika</td>
+            <td><img src="flags/zimbabve.png" height="50%" width="50%"> </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
